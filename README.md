@@ -1,4 +1,4 @@
-# 📚 Libft | 42 School Project
+# 📚 Libft | 42 School Project 
 ### Because real programmers don't use `string.h` 😉
 
 ![42 School Badge](https://img.shields.io/badge/42-School-blue)

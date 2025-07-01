@@ -20,21 +20,6 @@ BSRC = ft_lstnew_bonus.c ft_lstadd_front_bonus.c	\
 OBJ = $(SRC:.c=.o)
 
 
-define LIBFT_BANNER
-	@echo "$(YELLOW)"
-	@echo "██╗     ██╗██████╗ ███████╗████████╗"
-	@echo "██║     ██║██╔══██╗██╔════╝╚══██╔══╝"
-	@echo "██║     ██║██████╔╝█████╗     ██║   "
-	@echo "██║     ██║██╔══██╗██╔══╝     ██║   "
-	@echo "███████╗██║██████╔╝██║        ██║   "
-	@echo "╚══════╝╚═╝╚═════╝ ╚═╝        ╚═╝   "
-	@echo "$(RESET)"
-endef
-
-YELLOW = \033[1;33m
-RESET = \033[0m
-
-
 BOBJ = $(BSRC:.c=.o)
 
 all: $(NAME)
@@ -44,7 +29,6 @@ all: $(NAME)
 	ar -rc $(NAME) $@
 
 $(NAME): $(OBJ)
-	$(LIBFT_BANNER)
 clean:
 	rm -rf $(OBJ) $(BOBJ)
 
@@ -54,4 +38,3 @@ fclean: clean
 re: fclean all
 
 bonus: $(BOBJ)
-	$(LIBFT_BANNER)

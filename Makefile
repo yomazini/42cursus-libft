@@ -31,6 +31,10 @@ define LIBFT_BANNER
 	@echo "$(RESET)"
 endef
 
+YELLOW = \033[1;33m
+RESET = \033[0m
+
+
 BOBJ = $(BSRC:.c=.o)
 
 all: $(NAME)
